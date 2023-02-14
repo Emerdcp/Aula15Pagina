@@ -2,8 +2,8 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Tempo de geração: 14-Fev-2023 às 02:22
+-- Host: 127.0.0.1:3312
+-- Tempo de geração: 14-Fev-2023 às 20:19
 -- Versão do servidor: 10.4.25-MariaDB
 -- versão do PHP: 8.1.10
 
@@ -39,15 +39,17 @@ CREATE TABLE `cadastro` (
   `cad_youtube` varchar(150) NOT NULL,
   `cad_senha` varchar(20) NOT NULL,
   `cad_foto` varchar(150) NOT NULL,
-  `cad_imgfundo` varchar(150) NOT NULL
+  `cad_imgfundo` varchar(150) NOT NULL,
+  `cad_profissao` varchar(150) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `cadastro`
 --
 
-INSERT INTO `cadastro` (`cad_id`, `cad_nome`, `cad_email`, `cad_descricao`, `cad_instagram`, `cad_twitter`, `cad_facebook`, `cad_linkedin`, `cad_youtube`, `cad_senha`, `cad_foto`, `cad_imgfundo`) VALUES
-(1, 'Emerson de Carvalho', 'emersoncarvalho@hotmail.com.br', 'texto teste', 'https://www.instagram.com/', 'https://twitter.com/', 'https://pt-br.facebook.com/', 'https://br.linkedin.com/', 'https://www.youtube.com/', '1406junho', 'https://img.freepik.com/fotos-gratis/lindo-retrato-de-cachorro_23-2149218450.jpg', 'https://blog.emania.com.br/wp-content/uploads/2015/10/fotos-de-natureza.jpg');
+INSERT INTO `cadastro` (`cad_id`, `cad_nome`, `cad_email`, `cad_descricao`, `cad_instagram`, `cad_twitter`, `cad_facebook`, `cad_linkedin`, `cad_youtube`, `cad_senha`, `cad_foto`, `cad_imgfundo`, `cad_profissao`) VALUES
+(1, 'Emerson de Carvalho', 'emersoncarvalho@hotmail.com.br', 'texto teste', 'https://www.instagram.com/', 'https://twitter.com/', 'https://pt-br.facebook.com/', 'https://br.linkedin.com/', 'https://www.youtube.com/', '1406junho', 'https://img.freepik.com/fotos-gratis/lindo-retrato-de-cachorro_23-2149218450.jpg', 'https://blog.emania.com.br/wp-content/uploads/2015/10/fotos-de-natureza.jpg', NULL),
+(3, 'Kadu Fernandes', 'kadu@hotmail.com', 'Estudante', 'Não tem', 'Não tem', 'Não tem', 'Não tem', 'Não tem', 'Não tem', 'Não tem', 'Não tem', 'Estudante');
 
 --
 -- Índices para tabelas despejadas
@@ -67,7 +69,7 @@ ALTER TABLE `cadastro`
 -- AUTO_INCREMENT de tabela `cadastro`
 --
 ALTER TABLE `cadastro`
-  MODIFY `cad_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `cad_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
