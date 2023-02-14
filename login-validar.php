@@ -1,6 +1,6 @@
 <?php
-$usuario = $_POST['usuario'];
-$senha = $_POST['senha'];
+$usuario = $_POST['cad_usuario'];
+$senha = $_POST['cad_senha'];
 
 include_once "conexao.php";
 
@@ -10,7 +10,7 @@ $dados = mysqli_query($conexao, $sql);
 
 if($dados->num_rows > 0){
     session_start();
-    $_SESSION["usuario"] = $usuario;//para fazer que o usuário mostre o login
+    $_SESSION["cad_usuario"] = $usuario;//para fazer que o usuário mostre o login
     header("location:perfil-painel.php");
 }else{
     header("location:login.php?msg=mensagemInvalido");
