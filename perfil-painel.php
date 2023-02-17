@@ -16,6 +16,7 @@ session_start();
                         <?php include_once "mensagemInvalido.php";?>
                         <?php include_once "mensagemCadastrado.php";?>
                         <?php include_once "mensagemCadExcluido.php";?>
+                        <?php include_once "mensagemCadAlterado.php";?>
                     </div>
                     <div class="card">
                         <div class="card-body p-5">

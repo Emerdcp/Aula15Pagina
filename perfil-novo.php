@@ -1,11 +1,13 @@
 <?php include 'header.php'?>
 <?php include 'conexao.php'?>
 
+
+
 <body>
     <main class="conteiner">
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-10">
-                <form action="perfil-inserir.php" method="post">
+                <form action="perfil-novo-inserir.php" method="post">
                     <h1 class="title">Cadastro</h1>
                     <hr>
                     <div class="row">
