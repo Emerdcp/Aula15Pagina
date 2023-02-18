@@ -8,7 +8,7 @@ include_once "header.php";
 </div>
 
 <main class="container">
-    <a href="logout.php"> <?php echo $_SESSION["cad_usuario"]; ?> [ Sair ]</a>
+   
 
 
 <body>
