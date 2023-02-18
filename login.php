@@ -1,7 +1,5 @@
 <?php include "header.php";?>
 <?php include "conexao.php";?>
-
-
 <main class="container">
     <div class="row w-50 ms-auto me-auto vh-100">
         <div class="col align-self-center">

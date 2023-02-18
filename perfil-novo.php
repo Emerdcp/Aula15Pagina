@@ -1,5 +1,5 @@
-<?php include 'header.php'?>
-<?php include 'conexao.php'?>
+<?php include_once "header.php";?>
+<?php include_once "conexao.php";?>
 
 
 

@@ -1,4 +1,10 @@
+<?php 
+session_start();
+?>
+<a href="logout.php"> <?php echo $_SESSION["usuario"]; ?> [Sair]</a>
+
 <?php include_once "header.php";?>
+<?php include_once "conexao.php";?>
 
 <body>
     <section class="vh-100 fundo">

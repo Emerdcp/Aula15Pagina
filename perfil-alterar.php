@@ -1,5 +1,5 @@
-<?php include 'header.php'?>
-<?php include 'conexao.php'?>
+<?php include_once "header.php";?>
+<?php include_once "conexao.php";?>
 
 <?php 
 $id = $_GET['cad_id'];
@@ -47,7 +47,7 @@ while($alteraDados = mysqli_fetch_assoc($todosCadastros)){
                 <form action="perfil-alterar-confirmar.php" method="post">
                     <h1 class="title">Alterar Cadastro</h1>
                     <hr>
-                    <input type="hidden" name="id" value="<?php echo $id;?>">
+                    <input type="hidden" name="cad_id" value="<?php echo $id;?>">
                     <div class="row">
                         <div class="col-12">
                             <div class="form-group mb-3">
@@ -74,7 +74,7 @@ while($alteraDados = mysqli_fetch_assoc($todosCadastros)){
                         <div class="col-12">
                             <div class="form-group mb-3">
                                 <label class="label">Descrição</label>
-                                <textarea placeholder="Descrição" name="cad_descricao" class="form-control" rows="5" value="<?php echo $descricao;?>" required></textarea>
+                                <textarea placeholder="Descrição" name="cad_descricao" class="form-control" rows="5" required><?php echo $descricao?></textarea>
                             </div>
                         </div>
                     </div>

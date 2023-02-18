@@ -8,6 +8,8 @@ $sql = "SELECT * FROM cadastro WHERE cad_email = '$usuario' AND cad_senha = '$se
 
 $dados = mysqli_query($conexao, $sql);
 
+
+// criado um validação para poder saber se o usuário esta logado ou não. depois criar um página e colocar no include.
 if($dados->num_rows > 0){
     session_start();
     $_SESSION["cad_usuario"] = $usuario;//para fazer que o usuário mostre o login

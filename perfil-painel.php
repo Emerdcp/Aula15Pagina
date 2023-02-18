@@ -1,9 +1,15 @@
 <?php 
-session_start();
+include_once "sessao-login.php";
+include_once "header.php";
 ?>
-<a href="logout.php"> <?php echo @$_SESSION["usuario"]; ?> [Sair]</a>
 
-<?php include_once "header.php";?>
+<div class="menu container-fluid">
+    <?php include_once "menu.php";?>
+</div>
+
+<main class="container">
+    <a href="logout.php"> <?php echo $_SESSION["cad_usuario"]; ?> [ Sair ]</a>
+
 
 <body>
     <section class="vh-100 fundo">
@@ -62,4 +68,8 @@ session_start();
         </div>
     </section>
 </body>
+
+</main>
+
+
 <?php include_once "footer.php";?>
