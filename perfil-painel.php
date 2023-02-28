@@ -8,8 +8,6 @@ include_once "header.php";
 </div>
 
 <main class="container">
-   
-
 
 <body>
     <section class="vh-100 fundo">
