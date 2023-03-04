@@ -1,13 +1,13 @@
 <?php 
 include "conexao.php";
 
-$id = $_GET['cad_id'];
+$cad_id = $_GET['cad_id'];
 
-$sqlExcluir = "DELETE FROM CADASTRO WHERE CAD_ID = $id";
+$sqlExcluir = "DELETE FROM CADASTRO WHERE CAD_ID = $cad_id";
 
 mysqli_query($conexao, $sqlExcluir);
 
 mysqli_close($conexao);
 
-header("location: perfil-painel.php?msg=mensagemCadExcluido");
+header("location: perfil-visualizar.php?msg=mensagemCadExcluido");
 ?>

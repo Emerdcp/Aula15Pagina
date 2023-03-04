@@ -32,7 +32,10 @@
           <a class="nav-link" href="#">Painel</a>
         </li>
         <li>
-        <a class="nav-link" href="#">Adicionar Novo</a>
+          <a class="nav-link" href="perfil-novo.php">Novo</a>
+        </li>
+        <li>
+          <a class="nav-link" href="perfil-visualizar.php">Visualizar</a>
         </li>
       </ul>
 

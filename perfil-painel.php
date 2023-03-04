@@ -7,11 +7,9 @@ include_once "header.php";
     <?php include_once "menu.php";?>
 </div>
 
+
 <main class="container">
-   
-
-
-<body>
+ <body>
     <section class="vh-100 fundo">
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">

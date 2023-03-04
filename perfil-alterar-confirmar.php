@@ -1,30 +1,30 @@
 <?php 
 include_once "conexao.php";
 
-$id = $_POST['cad_id'];
-$nome = $_POST['cad_nome'];
-$email = $_POST['cad_email'];
-$profissao = $_POST['cad_profissao'];
-$descricao = $_POST['cad_descricao'];
-$instagram = $_POST['cad_instagram'];
-$twitter = $_POST['cad_twitter'];
-$facebook = $_POST['cad_facebook'];
-$linkedin = $_POST['cad_linkedin'];
-$youtube = $_POST['cad_youtube'];
-$senha = $_POST['cad_senha'];
-$foto = $_POST['cad_foto'];
-$imgfundo = $_POST['cad_imgfundo'];
+$cad_id = $_POST['cad_id'];
+$cad_nome = $_POST['cad_nome'];
+$cad_email = $_POST['cad_email'];
+$cad_profissao = $_POST['cad_profissao'];
+$cad_descricao = $_POST['cad_descricao'];
+$cad_instagram = $_POST['cad_instagram'];
+$cad_twitter = $_POST['cad_twitter'];
+$cad_facebook = $_POST['cad_facebook'];
+$cad_linkedin = $_POST['cad_linkedin'];
+$cad_youtube = $_POST['cad_youtube'];
+$cad_senha = $_POST['cad_senha'];
+$cad_foto = $_POST['cad_foto'];
+$cad_imgfundo = $_POST['cad_imgfundo'];
 
-$sqlAlterar = "UPDATE CADASTRO SET CAD_NOME = '$nome', CAD_EMAIL = '$email', CAD_PROFISSAO = '$profissao', 
-CAD_DESCRICAO = '$descricao', CAD_INSTAGRAM = '$instagram', CAD_TWITTER = '$twitter', 
-CAD_FACEBOOK = '$facebook', CAD_LINKEDIN = '$linkedin', CAD_YOUTUBE = '$youtube', 
-CAD_SENHA = '$senha', CAD_FOTO = '$foto', CAD_IMGFUNDO = '$imgfundo' WHERE CAD_ID = '$id'";
-echo $sqlAlterar;
-exit();
+$sqlAlterar = "UPDATE CADASTRO SET CAD_NOME = '$cad_nome', CAD_EMAIL = '$cad_email', CAD_PROFISSAO = '$cad_profissao', 
+CAD_DESCRICAO = '$cad_descricao', CAD_INSTAGRAM = '$cad_instagram', CAD_TWITTER = '$cad_twitter', 
+CAD_FACEBOOK = '$cad_facebook', CAD_LINKEDIN = '$cad_linkedin', CAD_YOUTUBE = '$cad_youtube', 
+CAD_SENHA = '$cad_senha', CAD_FOTO = '$cad_foto', CAD_IMGFUNDO = '$cad_imgfundo' WHERE CAD_ID = '$cad_id'";
+//echo $sqlAlterar;
+//exit();
 
 mysqli_query($conexao, $sqlAlterar);
 
 mysqli_close($conexao);
 
-header("location: perfil-novo.php?msg=mmensagemCadAlterado");
+header("location: perfil-visualizar.php?msg=mmensagemCadAlterado");
 ?>

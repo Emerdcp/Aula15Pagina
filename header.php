@@ -12,10 +12,10 @@
 
     <style>
         .fundo {
-            background-color: #D9AFD9;
-            background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+            background: rgb(14,12,55);
+            background: linear-gradient(90deg, rgba(14,12,55,1) 0%, rgba(35,76,116,1) 12%, rgba(58,147,173,1) 32%, rgba(59,178,212,1) 51%, rgba(183,210,215,1) 79%, rgba(172,172,172,1) 100%);
 
-        }
+        }/* Site para Gradiante => https://cssgradient.io/
         /*.fundo {
             min-height: 100vh;
             background: radial-gradient(50% 123.47% at 50% 50%, #00ff94 0%, #720059 100%),

@@ -1,9 +1,12 @@
 <?php 
-session_start();
+include_once "sessao-login.php";
+include_once "header.php";
 ?>
-<a href="logout.php"> <?php echo $_SESSION["usuario"]; ?> [Sair]</a>
 
-<?php include_once "header.php";?>
+<div class="menu container-fluid">
+    <?php include_once "menu.php";?>
+</div>
+
 <?php include_once "conexao.php";?>
 
 <body>
@@ -31,11 +34,17 @@ session_start();
                                     <div class="col-1"> 
                                         <?php echo $Visualizacao['cad_id']; ?>
                                     </div>
-                                    <div class="col-5"> 
+                                    <div class="col-4"> 
                                         <?php echo $Visualizacao['cad_nome']; ?>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-5">
                                         <?php echo $Visualizacao['cad_email']; ?>
+                                    </div>
+                                    <div class="col-2">
+                                        <span>
+                                            <a class='btn btn-light' href="perfil-alterar.php?cad_id=<?php echo $Visualizacao['cad_id']?>"><i class="bi bi-pencil-fill"></i></a>
+                                            <a class='btn btn-light' href="perfil-excluir.php?cad_id=<?php echo $Visualizacao['cad_id']?>"><i class="bi bi-trash-fill"></i></a>
+                                        </span>
                                     </div>
                                 </li>
                                 <?php
@@ -43,3 +52,10 @@ session_start();
                                 mysqli_close($conexao);
                                 ?>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
