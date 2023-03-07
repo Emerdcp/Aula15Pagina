@@ -1,4 +1,12 @@
-<?php include_once "header.php"; ?>
+<?php 
+include_once "sessao-login.php";
+include_once "header.php";
+?>
+
+<div class="menu container-fluid">
+    <?php include_once "menu.php";?>
+</div>
+
 <?php include_once "mensagens.php"; ?>
 <!-- inicio conteudo -->
 <div class="container">

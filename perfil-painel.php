@@ -7,15 +7,18 @@ include_once "header.php";
     <?php include_once "menu.php";?>
 </div>
 
-
 <main class="container">
  <body>
-    <section class="vh-100 fundo">
+    <section class="vh-100">
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col col-xl-10">
+                <div class="col col-xl-12">
                     <div class="justify-content-center">
                         <h1 class="title">Painel</h1>
+
+                        <a href="relatorio.php" class="btn btn-primary"> Relatótio</a>
+                        <a href="relatorio-old.php" class="btn btn-primary"> Relatótio-old</a>
+
                         <hr>
                         <?php include_once "mensagemInvalido.php";?>
                         <?php include_once "mensagemCadastrado.php";?>
@@ -39,10 +42,13 @@ include_once "header.php";
                                         <div class="col-1"> 
                                             <?php echo $umaTarefa['cad_id']; ?>
                                         </div>
-                                        <div class="col-4"> 
+                                        <div class="col-3"> 
                                             <?php echo $umaTarefa['cad_nome']; ?>
                                         </div>
-                                        <div class="col-4">
+                                        <div class="col-2"> 
+                                            <?php echo $umaTarefa['cad_profissao']; ?>
+                                        </div>
+                                        <div class="col-3">
                                             <?php echo $umaTarefa['cad_email']; ?>
                                         </div>
                                         <div class="col-3">
@@ -66,8 +72,6 @@ include_once "header.php";
         </div>
     </section>
 </body>
-
 </main>
-
 
 <?php include_once "footer.php";?>

@@ -4,6 +4,8 @@ $senha = $_POST['cad_senha'];
 
 include_once "conexao.php";
 
+$senha = md5($senha);//Para validar uma senha cripitografada
+
 $sql = "SELECT * FROM cadastro WHERE cad_email = '$usuario' AND cad_senha = '$senha'";
 
 $dados = mysqli_query($conexao, $sql);

@@ -58,10 +58,16 @@ while($alteraDados = mysqli_fetch_assoc($todosCadastros)){
                     <input type="hidden" name="cad_id" value="<?php echo $cad_id;?>">
                     
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-8">
                             <div class="form-group mb-3">
                                 <label class="label">Nome</label>
                                 <input placeholder="Nome" name="cad_nome" class="form-control" value="<?php echo $cad_nome;?>" required>
+                            </div>
+                        </div>
+                        <div class="col-4" class="form-group mb-3">
+                            <div class="form-group mb-3">
+                                <label class="label">Senha</label>
+                                <input placeholder="Senha" name="cad_senha" type="password" class="form-control" value="<?php echo $cad_senha;?>"required>
                             </div>
                         </div>
                     </div>
@@ -83,60 +89,51 @@ while($alteraDados = mysqli_fetch_assoc($todosCadastros)){
                         <div class="col-12">
                             <div class="form-group mb-3">
                                 <label class="label">Descrição</label>
-                                <textarea placeholder="Descrição" name="cad_descricao" class="form-control" rows="5" required><?php echo $cad_descricao?></textarea>
+                                <textarea placeholder="Descrição" name="cad_descricao" class="form-control" rows="2" value="<?php echo $cad_descricao;?>"required></textarea>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-6" class="form-group mb-3">
+                        <div class="col-4" class="form-group mb-3">
                             <div class="form-group mb-3">
                                 <label class="label">Instagram</label>
-                                <input placeholder="Instagram" name="cad_instagram" class="form-control" value="<?php echo $cad_instagram;?>" >
+                                <input placeholder="Instagram" name="cad_instagram" class="form-control" value="<?php echo $cad_instagram;?>">
                             </div>
                         </div>
-                        <div class="col-6" class="form-group mb-3">
+                        <div class="col-4" class="form-group mb-3">
                             <div class="form-group mb-3">
                                 <label class="label">Twitter</label>
-                                <input placeholder="Twitter" name="cad_twitter" class="form-control" value="<?php echo $cad_twitter;?>" >
+                                <input placeholder="Twitter" name="cad_twitter" class="form-control" value="<?php echo $cad_twitter;?>">
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6" class="form-group mb-3">
+                        <div class="col-4" class="form-group mb-3">
                             <div class="form-group mb-3">
                                 <label class="label">Facebook</label>
-                                <input placeholder="Facebook" name="cad_facebook" class="form-control" value="<?php echo $cad_facebook;?>" >
+                                <input placeholder="Facebook" name="cad_facebook" class="form-control" value="<?php echo $cad_facebook;?>">
                             </div>
                         </div>
-                        <div class="col-6" class="form-group mb-3">
+                    </div>
+                    <div class="row">
+                        <div class="col-4" class="form-group mb-3">
                             <div class="form-group mb-3">
                                 <label class="label">Linkedin</label>
-                                <input placeholder="Linkedin" name="cad_linkedin" class="form-control" value="<?php echo $cad_linkedin;?>" >
+                                <input placeholder="Linkedin" name="cad_linkedin" class="form-control" value="<?php echo $cad_linkedin;?>">
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6" class="form-group mb-3">
+                        <div class="col-4" class="form-group mb-3">
                             <div class="form-group mb-3">
                                 <label class="label">YouTube</label>
-                                <input placeholder="YouTube" name="cad_youtube" class="form-control" value="<?php echo $cad_youtube;?>" >
+                                <input placeholder="YouTube" name="cad_youtube" class="form-control" value="<?php echo $cad_youtube;?>">
                             </div>
                         </div>
-                        <div class="col-6" class="form-group mb-3">
-                            <div class="form-group mb-3">
-                                <label class="label">Senha</label>
-                                <input placeholder="Senha" name="cad_senha" type="password" class="form-control" value="<?php echo $cad_senha;?>" required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12" class="form-group mb-3">
+                        <div class="col-4" class="form-group mb-3">
                             <div class="form-group mb-3">
                                 <label class="label">Selecione sua Foto</label>
-                                <input type="file" name="cad_foto" class="form-control">
+                                <input type="file" name="cad_foto" class="form-control" >
                             </div>
                         </div>
                     </div>
+                    <hr>
                     <div class="row mt-1">
                         <div class="col-3">
                             <div class="form-check">
@@ -171,9 +168,8 @@ while($alteraDados = mysqli_fetch_assoc($todosCadastros)){
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col-4" class="form-group mb-3" class="botao">
+                        <div class="col-12" class="form-group mb-3" class="botao">
                             <button type="submit" class="btn btn-dark ms-2"><i class="bi bi-person-x-fill"></i> Alterar</button>
-                            <button type="reset" class="btn btn-dark ms-2"><i class="bi bi-person-x-fill"></i> Cancelar</button> 
                         </div>                       
                     </div>
                 </form>
